@@ -1,0 +1,25 @@
+# Ambiente virtual
+/venv
+env/
+
+# Arquivos de configuração local
+.env
+
+# Banco de dados
+#*.sqlite3
+#*.sql
+#*.db
+
+# Arquivos temporários
+*.bak
+*.tmp
+
+# Cache de pacotes
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# Pasta que não deve subir no git
+/arquivos_text
+/__pycache__
+
