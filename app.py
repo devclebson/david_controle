@@ -8,7 +8,7 @@ import os
 # Carregar variáveis de ambiente do arquivo .env
 load_dotenv()
 
-#from mod_site.site import bp_home
+from mod_site.mod_site import bp_home
 #from mod_admin.admin import bp_admin
 
 
@@ -22,7 +22,7 @@ app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_port=1, x_
 
 
 # Registro dos Blueprints
-#app.register_blueprint(bp_home)
+app.register_blueprint(bp_home)
 #app.register_blueprint(bp_admin)
 
 
